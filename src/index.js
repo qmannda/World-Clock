@@ -38,7 +38,6 @@ function changeCity(event) {
   if (cityTimeZone === "current") {
     cityTimeZone = moment.tz.guess();
   }
-
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let cityElement = document.querySelector("#cities");
@@ -51,7 +50,7 @@ function changeCity(event) {
     "A"
   )}</small></div>
   </div>
-<div><a href="https://677c22ecbe6e18000806ba8f--worldclock-mannda.netlify.app/">Homepage</a></div>`;
+<div><a href="https://worldclock-mannda.netlify.app/">Homepage</a></div>`;
 }
 
 fixTime();
