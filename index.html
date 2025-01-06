@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>World Clock</title>
   </head>
@@ -12,25 +14,28 @@
 
       <select name="" id="countries">
         <option value="">Select a city..</option>
-        <option value="durban">Durban</option>
-        <option value="london">London</option>
-        <option value="paris">Paris</option>
+        <option value="current">My current location</option>
+        <option value="America/Barbados">Barbados</option>
+        <option value="Aisa/Qatar">Qatar</option>
+        <option value="Asia/Dubai">Dubai</option>
       </select>
-      <div class="city">
-        <div>
-          <h2>Cape Town</h2>
-          <div class="date">January 6th 2025</div>
-        </div>
+      <div id="cities">
+        <div class="city" id="joburg">
+          <div>
+            <h2>Johannesburg</h2>
+            <div class="date">January 6th 2025</div>
+          </div>
 
-        <div class="time">15:47:15 <small>PM</small></div>
-      </div>
-      <div class="city">
-        <div>
-          <h2>Pretoria</h2>
-          <div class="date">January 6th 2025</div>
+          <div class="time">15:47:15 <small>PM</small></div>
         </div>
+        <div class="city" id="fiji">
+          <div>
+            <h2>Fiji</h2>
+            <div class="date">January 6th 2025</div>
+          </div>
 
-        <div class="time">15:47:15 <small>PM</small></div>
+          <div class="time">15:47:15 <small>PM</small></div>
+        </div>
       </div>
     </div>
 
