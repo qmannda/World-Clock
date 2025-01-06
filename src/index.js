@@ -21,6 +21,16 @@ function fixTime() {
     fijiDate.innerHTML = fijiToday.format("MMMM Do YYYY");
     fijiTime.innerHTML = fijiToday.format("hh:mm:ss [<small>]A[</small>]");
   }
+
+  let luxeElement = document.querySelector("#luxe");
+  if (luxeElement) {
+    let luxeDate = luxeElement.querySelector(".date");
+    let luxeTime = luxeElement.querySelector(".time");
+    let luxeToday = moment().tz("Europe/Luxembourg");
+
+    luxeDate.innerHTML = luxeToday.format("MMMM Do YYYY");
+    luxeTime.innerHTML = luxeToday.format("hh:mm:ss [<small>]A[</small>]");
+  }
 }
 
 function changeCity(event) {
@@ -40,7 +50,8 @@ function changeCity(event) {
     <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
     "A"
   )}</small></div>
-  </div>`;
+  </div>
+<div><a href="https://677c22ecbe6e18000806ba8f--worldclock-mannda.netlify.app/">Homepage</a></div>`;
 }
 
 fixTime();
